@@ -87,7 +87,7 @@ if __name__ == '__main__':
     for i in range(num_boxes):
         rects.append(rect(*grab_ints()))
     best = 0
-    for i in range(0, 2):
+    for i in range(0, 101):
         round_best = find_best_overlap([r.range_from_point(i) for r in rects])
         if round_best > best:
             best = round_best
